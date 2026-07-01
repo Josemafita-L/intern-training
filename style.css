@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #0077cc;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #0077cc;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0077cc;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 8px;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.sort-section {
+    margin-top: 10px;
+}
+
+#task-counter {
+    font-weight: bold;
+    color: #444;
+}
+
+#task-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+#task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f8f8;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-left: 5px solid #0077cc;
+    border-radius: 5px;
+}
+
+.done {
+    text-decoration: line-through;
+    opacity: 0.6;
+    background-color: #dff0d8;
+}
+
+.overdue {
+    border-left: 5px solid red !important;
+    background-color: #ffe5e5;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background-color: #0077cc;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .filter-buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #task-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
