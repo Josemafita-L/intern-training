@@ -5,47 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Tracker</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Header -->
     <header>
         <h1>Task Tracker</h1>
         <p>Manage your daily tasks efficiently.</p>
     </header>
 
-    <!-- Main Content -->
     <main>
 
-        <!-- Task Form -->
-        <section class="task-form-section">
+        <section>
 
             <h2>Add New Task</h2>
 
             <form id="task-form">
 
                 <div class="form-group">
+
                     <label for="task-name">Task Name</label>
+
                     <input type="text" id="task-name" placeholder="Enter task name" required>
+
                 </div>
 
                 <div class="form-group">
+
                     <label for="priority">Priority</label>
 
                     <select id="priority" required>
+
                         <option value="Low">Low</option>
                         <option value="Medium">Medium</option>
                         <option value="High">High</option>
+
                     </select>
+
                 </div>
 
                 <div class="form-group">
+
                     <label for="due-date">Due Date</label>
 
                     <input type="date" id="due-date" required>
+
                 </div>
 
                 <button type="submit">
@@ -56,8 +61,7 @@
 
         </section>
 
-        <!-- Filter and Sort -->
-        <section class="controls">
+        <section>
 
             <h2>Task Controls</h2>
 
@@ -77,34 +81,29 @@
 
             </div>
 
-            <div class="sort-section">
+            <br>
 
-                <label for="sort-select">
-                    Sort By
-                </label>
+            <label for="sort-by">
+                Sort By
+            </label>
 
-                <select id="sort-select">
+            <select id="sort-by">
 
-                    <option value="">
-                        Select
-                    </option>
+                <option value="">
+                    Select
+                </option>
 
-                    <option value="priority">
-                        By Priority
-                    </option>
+                <option value="priority">
+                    By Priority
+                </option>
 
-                    <option value="dueDate">
-                        By Due Date
-                    </option>
+                <option value="dueDate">
+                    By Due Date
+                </option>
 
-                </select>
+            </select>
 
-            </div>
-
-        </section>
-
-        <!-- Counter -->
-        <section>
+            <br><br>
 
             <p id="task-counter">
                 Showing 0 of 0 tasks
@@ -112,16 +111,15 @@
 
         </section>
 
-        <!-- Task List -->
         <section>
 
-            <h2>Your Tasks</h2>
+            <h2>Task List</h2>
 
             <ul id="task-list">
 
-                <!-- Tasks will be added dynamically -->
-
             </ul>
+
+            <br>
 
             <button id="clear-all" type="button">
                 Clear All
@@ -129,7 +127,6 @@
 
         </section>
 
-        <!-- Summary Table -->
         <section>
 
             <h2>Task Summary</h2>
@@ -140,18 +137,14 @@
 
                     <tr>
 
-                        <th>Task</th>
                         <th>Priority</th>
-                        <th>Due Date</th>
-                        <th>Status</th>
+                        <th>Count</th>
 
                     </tr>
 
                 </thead>
 
                 <tbody id="summary-body">
-
-                    <!-- JavaScript will populate this table -->
 
                 </tbody>
 
@@ -161,7 +154,6 @@
 
     </main>
 
-    <!-- Footer -->
     <footer>
 
         <p>
@@ -170,7 +162,7 @@
 
     </footer>
 
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
 
 </body>
 
